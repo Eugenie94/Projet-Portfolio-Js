@@ -169,15 +169,15 @@ padding: 0.5rem 0.8rem;
 }
 
 @media screen and (max-width: 1000px) {
-
     
-#menu-content{ 
-    margin-top: 20%;
-
+    #menu-content{ 
+        margin-top: 20%;
+    }
+    
+    .parent1-texte {
+        top: 40vh;
+    }
 
 }
 
-
-
-}
 /* FIN MEDIA QUERIES FOOTER */
