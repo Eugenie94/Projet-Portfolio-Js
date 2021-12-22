@@ -13,10 +13,8 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/a3b3ad3be6.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-crossorigin="anonymous" /> -->
     <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link href="./css/media-queries.css" type="text/css" rel="stylesheet">
 
 </head>
 
@@ -31,30 +29,24 @@ crossorigin="anonymous" /> -->
         <!-- DEBUT NAVBAR -->
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-1">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png" width="152"
-                    height="75"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="./images/logo.png" width="152" height="75">
+            </a>
+            <!-- <button onclick="showHamburger()" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button> -->
 
+            <div onclick="showHamburger()" id="menuToggle">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="page1.html">A propos de moi <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page2.html">Mon CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page3.html">Mes projets</a>
-                    </li>
-                </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-                    <a href="contact.html" class="btn btn-outline-danger btn-lg my-2 my-sm-0" type="submit">Contact</a>
-                </form> -->
-            </div>
+          
+                <span></span>
+                <span></span>
+                <span></span>
+          
+      
+              </div>
+            
         </nav>
 
         <!-- FIN NAVBAR -->
@@ -64,14 +56,34 @@ crossorigin="anonymous" /> -->
     <!-- FIN HEADER -->
 
 
-
     <!-- DEBUT CONTENU -->
     <main>
+        <div id="menu-content">
+            <ul style="list-style-type: none;">
+                <li>
+                    <a class="link-hamburger" href="">
+                        A propos de moi
+                    </a>
+                </li>
+                <li>
+                    <a class="link-hamburger" href="">
+                        Mon CV
+                    </a>
+                </li>
+                <li>
+                    <a class="link-hamburger" href="">
+                        Mes projets
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         <div class="parent1-texte">
             <div class="parent-texte d-flex flex-column">
                 <span class="nom-prenom">Eugénie KHAYAT</span>
-                <span class="promotion">Bachelor Développeur Web Fullstack & DevOps</span>
-                <span class="promotion">IPSSI Paris - PRS - BD 22.2</span>
+                <span class="promotion1">Bachelor Développeur Web Fullstack & DevOps</span>
+                <span class="promotion-mobile">Bachelor Développeur Web </br> Fullstack & DevOps</span>
+                <span class="promotion2">IPSSI Paris - PRS - BD 22.2</span>
             </div>
         </div>
     </main>
@@ -80,23 +92,7 @@ crossorigin="anonymous" /> -->
 
     <!-- DEBUT FOOTER-->
 
-    <footer class="text-center bg-dark p-1">
-
-        <!-- <div class="row justify-content-center p-1 copyright">
-            <div class="col col-md-3 col-lg-2">
-                <p class="copyright">© Eugénie KHAYAT</p>
-            </div>
-            <div class="col col-md-3 col-lg-2">
-                <a class="texte-footer" href="mentionslegales.html">
-                    <p>Mentions légales</p>
-                </a>
-            </div>
-            <div class="col col-md-3 col-lg-2">
-                <a class="texte-footer contact" href="contact.html">
-                    <p>Contact</p>
-                </a>
-            </div>
-        </div> -->
+    <footer class="text-center bg-dark p-2">
 
         <div class="row justify-content-center pictogramme">
             <!--linkedin-->

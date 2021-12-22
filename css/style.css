@@ -1,162 +1,132 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{ /* permet de modifier le padding entre les link de la navbar */
+.navbar-expand-lg .navbar-nav .nav-link {
+    /* permet de modifier le padding entre les link de la navbar */
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
 
 
-                /* DEBUT MENU BOOTSTRAP */     
+/* DEBUT MENU BOOTSTRAP */
 
 .logo {
     padding: 0;
 }
 
-.nav-link {         /*lien sans le survol */
+.nav-link {
+    /*lien sans le survol */
     font-size: 2.2vh;
     font-family: Helvetica;
     color: white !important;
 }
 
 
-.nav-link:hover {    /* lien au survol de la souris */
+.nav-link:hover {
+    /* lien au survol de la souris */
     color: #fb2ca2 !important;
 }
 
-.dropdown-item {      /* lien menu dropdown */
+.dropdown-item {
+    /* lien menu dropdown */
     font-size: 2.8vh;
     color: white;
     font-family: Helvetica;
 }
 
-.dropdown-item:hover {  /* lien dropdown au survol de la souris */
+.dropdown-item:hover {
+    /* lien dropdown au survol de la souris */
     background-color: #343a40;
     color: #fb2ca2;
 }
 
-.btn {          /* couleur bouton */
-    color: white;
-    background-color: #fb2ca2;
-    font-family: Helvetica;
-}
+/* FIN MENU BOOTSTRAP */
 
-.btn:hover {      /* couleur bouton au survol */
-    color: white;
-    background-color: #fb2ca2;
-}
 
-@media screen and (min-width: 280px) and (max-width: 1100px) { 
+/* DEBUT MENU HAMBURGER */
+#menuToggle     /* css pour les 3 petits trait hamburger écran réduit permet de les placer a gauche */
+    {
+      display: block;
+      position: relative;
+      margin-top: 5%;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
     
-    .btn-group-lg>.btn, .btn-lg  {        
-        font-size: 14px;
-        padding: 0.5rem 0.8rem;
+    #menuToggle span   /* css des trois barres dont la couleur */
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #fb2ca2; /*voir si je met cette couleur a la place  rgb(71, 71, 71) */
+      border-radius: 3px;
+      z-index: 1;
     }
-}
-
-/* MEDIA QUERIES POUR NAV LINK */
-  
-@media screen and (min-width: 280px) and (max-width: 410px) { 
     
-    .nav-link, .dropdown-item  {        
-        font-size: 1.4vh;
-    }
-}
 
-@media screen and (min-width: 410px) and (max-width: 438px) {     
-
-    .nav-link, .dropdown-item  {        
-        font-size: 1.9vh;
-    }
+#menu-content{ /* cache le contenu de mon menu hamburger */
+    display:none;
+    background-color: #343a40!important;
+    padding: 15px 15px 5px 15px;
+    margin-top: 10%;
 
 }
 
-
-@media screen and (min-width: 438px) and (max-width: 605px) {     
-
-    .nav-link, .dropdown-item  {        
-        font-size: 2vh;
-    }
-
+.link-hamburger{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.2rem;
 }
 
-@media screen and (min-width: 605px) and (max-width: 1160px) {     
-
-    .nav-link, .dropdown-item  {        
-        font-size: 2.3vh;
-    }
-
+.link-hamburger:hover{
+    text-decoration: none;
+    color: #fb2ca2;
+    font-size: 1.2rem;
 }
 
-@media screen and (min-width: 1160px) and (max-width: 1200px) {     
-
-    .nav-link, .dropdown-item  {        
-        font-size: 2.3vh;
-    }
-
+li{
+    padding-top:15px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1250px) {     
-
-    .nav-link, .dropdown-item  {        
-        font-size: 2.5vh;
-    }
-
-}
-
-@media screen and (min-width: 1250px) and (max-width: 1300px) {     
-
-    .nav-link, .dropdown-item  {        
-        font-size: 2.6vh;
-    }
-
-}
-
-@media screen and (min-width: 1250px) and (max-width: 1340px) {     
-
-    .nav-link, .dropdown-item  {        
-        font-size: 2.7vh;
-    }
-
-}
-
-/* FIN MEDIA QUERIES POUR NAV LINK */
+/* FIN MENU HAMBURGER */
 
 
-                /* FIN MENU BOOTSTRAP */
+/* DEBUT CONTENU */
 
-
-                /* DEBUT CONTENU */
-
-.nom-prenom { /* EUGENIE KHAYAT */
+.nom-prenom {
+    /* EUGENIE KHAYAT */
     font-family: roboto;
-    /* font-size: 150%; */
     font-size: 3.5vw;
     color: #fb2ca2;
     text-transform: uppercase;
     letter-spacing: 6px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
-.nom-prenom:hover { /* EUGENIE KHAYAT SURVOL */
+.nom-prenom:hover {
+    /* EUGENIE KHAYAT SURVOL */
     transition: all 0.5s ease 0s;
     color: rgb(97, 97, 97);
 }
 
-.parent1-texte {  /* englobe mon petit parent */
+.parent1-texte {
+    /* englobe mon petit parent */
     display: table-cell;
     position: absolute;
     vertical-align: middle;
@@ -164,116 +134,116 @@
     top: 30vh;
 }
 
-.parent-texte {  /* englobe mes span */
+.parent-texte {
+    /* englobe mes span */
     text-align: center;
     vertical-align: middle;
 }
 
-.promotion {  /* DEVELOPPEUSE WEB FULLSTACK */
+.promotion1,
+.promotion2 {
+    /* DEVELOPPEUSE WEB FULLSTACK & DEVOPS */
     color: #fb2ca2;
     font-family: roboto;
     font-size: 2vw;
     text-transform: uppercase;
     letter-spacing: 6px;
-    padding-top: 4%;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    padding-top: 50px;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
-.promotion:hover {     /* phrase qualite survol */
+.promotion-mobile {
+    /* DEVELOPPEUSE WEB FULLSTACK & DEVOPS */
+    display: none;
+}
+
+.promotion1:hover,
+.promotion2:hover {
+    /* Promotion IPSSI */
     transition: all 0.5s ease 0s;
     color: rgb(97, 97, 97);
 }
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
 }
 
 
-                /* FIN CONTENU */
+/* FIN CONTENU */
 
-                /* DEBUT FOOTER */
+/* DEBUT FOOTER */
 
-                
 
-footer {        /* POUR QUE MON FOOTER SOIT EN BAS */
+
+footer {
+    /* POUR QUE MON FOOTER SOIT EN BAS */
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.row {      /*4 pour supprimer la margin-right -15px a droite */
+.row {
+    /*4 pour supprimer la margin-right -15px a droite */
     margin-right: 0;
     margin-left: 0;
 }
 
 
-.copyright {        /* copyright */
+.copyright {
+    /* copyright */
     font-family: roboto;
     font-size: 1.8vh;
     color: white;
 }
 
-.texte-footer {         /* mention legal et contact hover */
+.texte-footer {
+    /* mention legal et contact hover */
     font-family: roboto;
     font-size: 1.8vh;
     color: white;
 }
 
-.texte-footer:hover {        /* mention legal et contact hover */
+.texte-footer:hover {
+    /* mention legal et contact hover */
     color: white;
 }
 
 
-.fab, .far {            /* couleur pictogramme */
+.fab,
+.far {
+    /* couleur pictogramme */
     color: #fb2ca2;
     font-size: 1.8em;
 }
 
-@media screen and (max-width: 768px) {      /* en dessous de 768 les picto retrecisse */
-    .fab, .far {      
-        font-size: 1.4em;
-    }
-
-}
-
-/* DEBUT MEDIA QUERIES FOOTER */
-
-@media screen and (min-width: 200px) and (max-width: 567px) { 
-
-    .copyright, .texte-footer {        /* copyright */
-        display: block;
-        font-size: 1.7vh;
-    }
-
-}
-
-@media screen and (min-width: 567px) and (max-width: 767px) { 
-
-    .copyright, .texte-footer {        /* copyright */
-        display: block;
-        font-size: 1.9vh;
-    }
-
-}
-
-
-/* FIN MEDIA QUERIES FOOTER */ 
-
-
-                /* FIN FOOTER */
-
-                
+/* FIN FOOTER */
