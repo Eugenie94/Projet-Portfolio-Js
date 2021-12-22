@@ -51,28 +51,18 @@
 
 
 /* DEBUT MENU HAMBURGER */
-#menuToggle     /* css pour les 3 petits trait hamburger écran réduit permet de les placer a gauche */
-    {
-      display: block;
-      position: relative;
-      margin-top: 5%;
-      z-index: 1;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-    
-    #menuToggle span   /* css des trois barres dont la couleur */
-    {
-      display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
-      background: #fb2ca2; /*voir si je met cette couleur a la place  rgb(71, 71, 71) */
-      border-radius: 3px;
-      z-index: 1;
-    }
-    
+
+#menuToggle span {  /* css des trois barres dont la couleur */
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #fb2ca2; /*voir si je met cette couleur a la place  rgb(71, 71, 71) */
+    border-radius: 3px;
+    z-index: 1;
+}
+
 
 #menu-content{ /* cache le contenu de mon menu hamburger */
     display:none;
