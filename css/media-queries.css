@@ -165,12 +165,19 @@ padding: 0.5rem 0.8rem;
         font-size: 1.9vh;
     }
 
-    #menu-content{ 
-        margin-top: 20%;
 
-    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    
+#menu-content{ 
+    margin-top: 20%;
+
 
 }
 
 
+
+}
 /* FIN MEDIA QUERIES FOOTER */
