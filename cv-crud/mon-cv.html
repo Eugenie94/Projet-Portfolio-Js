@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- DEBUT HEAD -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon Portfolio | Mon CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/a3b3ad3be6.js" crossorigin="anonymous"></script>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/cv.css" type="text/css" rel="stylesheet">
+    <link href="../css/media-queries.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<!-- FIN HEAD -->
+
+<body>
+
+    <!-- DEBUT HEADER -->
+
+    <header>
+
+        <!-- DEBUT NAVBAR -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-1">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../images/logo.png" width="152" height="75">
+            </a>
+            <!-- <button onclick="showHamburger()" class="navbar-toggler" type="button">
+<span class="navbar-toggler-icon">
+</span>
+</button> -->
+
+            <div onclick="showHamburger()" id="menuToggle">
+
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cv-crud/mon-cv.html">
+                            Mon CV
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../projets-crud/projets.html">
+                            Mes projets
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!-- FIN NAVBAR -->
+
+    </header>
+
+    <!-- FIN HEADER -->
+
+
+    <!-- DEBUT CONTENU -->
+    <main>
+
+        <!-- DEBUT MENU HAMBURGER -->
+
+        <div id="menu-content">
+            <ul style="list-style-type: none;">
+                <li>
+                    <a class="link-hamburger" href="../cv-crud/mon-cv.html">
+                        Mon CV
+                    </a>
+                </li>
+                <li>
+                    <a class="link-hamburger" href="../projets-crud/projets.html">
+                        Mes projets
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- FIN MENU HAMBURGER -->
+
+        <div class="parent1-texte">
+            <h1 class="titre-cv">Mon CV</h1>
+            <section>
+                <div class="photo">
+                    <img src="../images/photo-eugenie.jpg" alt="Ma photo de profil">
+                </div>
+                <div class="prez">
+                    <h2>A propos</h2>
+                    <p class="texte">Passionnée d'informatique depuis mon plus jeune âge, le développement web est mon
+                        domaine de prédilection. Je suis actuellement en Bachelor Développeur Web Fullstack et DevOps à
+                        l'IPSSI Paris.</p>
+                    <a href="../pdf/CV-Khayat-Eugenie.pdf" download>Télécharger mon CV</a>
+                </div>
+                <div class="contact">
+                    <h2>Informations de contact</h2>
+                    <div class="contact-flex">
+                        <p class="texte">Nom : </p>
+                        <p class="texte">KHAYAT Eugénie</p>
+                    </div>
+                    <div class="contact-flex">
+                        <p class="texte">Adresse : </p>
+                        <p class="texte">101 rue de Choisy - 94400 Vitry-sur-Seine</p>
+                    </div>
+                    <div class="contact-flex">
+                        <p class="texte">Téléphone :</p>
+                        <p class="texte">06 72 90 35 88</p>
+                    </div>
+                    <div class="contact-flex">
+                        <p class="texte">Mail : </p>
+                        <p class="texte"><a href="mailto:e.khayat@ecole-ipssi.net">e.khayat@ecole-ipssi.net</a></p>
+                    </div>
+                    <div class="contact-flex">
+                        <p class="texte">Permis :</p>
+                        <p class="texte">B</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/eugénie-khayat-535085191"><i class="fab fa-linkedin-in"
+                                aria-hidden="true"></i></a>
+                        <a href="https://github.com/Eugenie94"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="mailto:e.khayat@ecole-ipssi.net"><i class="far fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Expériences professionnelles</h2>
+                <div class="exp">
+                    <div class="exp-logo">
+                        <a href="https://www.aduneo.com/"><img src="../images/aduneo.jpg" alt="Logo de LegalPlace"></a>
+                    </div>
+                    <div class="exp-info">
+                        <h3>Développeuse Web Fullstack</h3>
+                        <h4>Alternance</h4>
+                        <h4>Decembre 2021 - Aujourd'hui</h4>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="texte">Resizing de l'application NeoPage → (SASS) </br>
+                            Développement de l'application Neopage → ( HTML5 / SASS / ANGULAR / JAVA )</br></p>
+                    </div>
+                </div>
+                <div class="exp">
+                    <div class="exp-logo">
+                        <a href="https://www.expertcroisiere.com/"><img src="../images/picture.jpg"
+                                alt="logo les experts du voyage"></a>
+                    </div>
+                    <div class="exp-info">
+                        <h3>Développeur Web Fullstack</h3>
+                        <h4>Stage</h4>
+                        <h4>Mars 2021 - Septembre 2021</h4>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="texte">Refonte du site → https://www.lafranceenvacances.fr
+                            ( HTML5 / CSS3 / Bootstrap / JQuery / FileZilla ) </br>
+                            Élaboration des tunnels de vente → https://tunnels-de-vente.netlify.app/
+                            ( HTML5 / CSS3 / JQuery / FileZilla ) </br>
+                            Création des newsletters
+                            ( HTML5 / CSS3 / JQuery / PHP7 / FileZilla )</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Formation</h2>
+                <div class="exp">
+                    <div class="exp-logo">
+                        <a href="https://ecole-ipssi.com/"><img src="../images/logoIPSSI_nobaseline.jpg"
+                                alt="IPSSI"></a>
+                    </div>
+                    <div class="exp-info">
+                        <h3>IPSSI</h3>
+                        <h4>Novembre 2021 - Aujourd'hui</h4>
+                    </div>
+                    <div class="exp-desc">
+                        HTML5 / CSS3 / JavaScript / NodeJs / Angular / PHP / POO / MySql / Symfony / Doctrine / SEO /
+                        Bash / Shell / Git / GitHub / Linux / VirtualBox / Docker
+                    </div>
+                </div>
+                <div class="exp">
+                    <div class="exp-logo">
+                        <a href="https://cours.wf3.fr/"><img src="../images/WebForce3_logo-violet_JPEG.jpg"
+                                alt="WebForce3"></a>
+                    </div>
+                    <div class="exp-info">
+                        <h3>WebForce3</h3>
+                        <h4>Novembre 2020 - Mars 2021</h4>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="texte">HTML5 / CSS3 / Bootstrap / Wordpress / JavaScript / JQuery / Angular / PHP /
+                            POO / MySql / Symfony / Doctrine / SEO / Bash / Shell / Git / GitHub</p>
+                    </div>
+                </div>
+                <div class="exp">
+                    <div class="exp-logo">
+                        <a href="https://www.webacademie.org/"><img src="../images/logo-webacademie.jpg"
+                                alt="Web academie"></a>
+                    </div>
+                    <div class="exp-info">
+                        <h3>Piscine Web@cademie</h3>
+                        <h4>Novembre 2019</h4>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="texte">HTML5 / CSS3 / Bootstrap / PHP / POO / MySql / Bash / Shell / Git / GitHub</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>CVS</h2>
+                <div class="exp">
+                    <div class="exp-logo">
+                        <a href="https://ecole-ipssi.com/"><img src="../images/logoIPSSI_nobaseline.jpg"
+                                alt="IPSSI"></a>
+                    </div>
+                    <div class="exp-info">
+                        <h3>IPSSI</h3>
+                        <h4>Novembre 2021 - Aujourd'hui</h4>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="texte">Titre certifié d’Administrateur de systèmes d’information diplôme reconnu par l’État de niv 6</p>
+                    </div>
+                </div>
+                <div class="exp">
+                    <div class="exp-logo">
+                        <a href="https://cours.wf3.fr/"><img src="../images/WebForce3_logo-violet_JPEG.jpg"
+                                alt="WebForce3"></a>
+                    </div>
+                    <div class="exp-info">
+                        <h3>WebForce3</h3>
+                        <h4>Novembre 2020 - Mars 2021</h4>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="texte">Titre certifié Développeur Web et Web Mobile diplôme reconnu par l’État de niv 5</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Compétences</h2>
+                <h3 class="h3gauche">Professionnelles</h3>
+                <div class="comp">
+                    <p class="texte">HTML5 / CSS3 / Bootstrap / Bulma</p>
+                    <div class="conteneur-barre"><span class="barre c100"></span></div>
+                </div>
+                <div class="comp">
+                    <p class="texte">JavaScript / JQuery</p>
+                    <div class="conteneur-barre"><span class="barre c75"></span></div>
+                </div>
+                <div class="comp">
+                    <p class="texte">PHP / POO / MySQL</p>
+                    <div class="conteneur-barre"><span class="barre c75"></span></div>
+                </div>
+                <div class="comp">
+                    <p class="texte">Symfony / Doctrine </p>
+                    <div class="conteneur-barre"><span class="barre c65"></span></div>
+                </div>
+                <div class="comp">
+                    <p class="texte">Git / GitHub / GitLab</p>
+                    <div class="conteneur-barre"><span class="barre c90"></span></div>
+                </div>
+                <div class="comp">
+                    <p class="texte">Visual Studio Code / PhpStorm / Eclipse</p>
+                    <div class="conteneur-barre"><span class="barre c90"></span></div>
+                </div>
+                <h3 class="h3gauche">Personnelles</h3>
+                <div class="comp2">
+                    <p class="texte">Créativité</p>
+                    <p class="texte">90%</p>
+                    <div class="conteneur-barre2"><span class="barre c90"></span></div>
+                </div>
+                <div class="comp2">
+                    <p class="texte">Adaptation</p>
+                    <p class="texte">85%</p>
+                    <div class="conteneur-barre2"><span class="barre c85"></span></div>
+                </div>
+                <div class="comp2">
+                    <p class="texte">Sérieux</p>
+                    <p class="texte">95%</p>
+                    <div class="conteneur-barre2"><span class="barre c95"></span></div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Centres d'intérêt</h2>
+                <figure class="interet">
+                    <img src="../images/rollers-en-ligne-homme.jpg" alt="roller">
+                    <figcaption>Roller</figcaption>
+                </figure>
+                <figure class="interet">
+                    <img src="../images/Lux_Splash_7.jpg" alt="jeux vidéos">
+                    <figcaption>Jeux vidéos</figcaption>
+                </figure>
+                <figure class="interet">
+                    <img src="../images/lasagnes.jpg" alt="Cuisine">
+                    <figcaption>Cuisine</figcaption>
+                </figure>
+                <figure class="interet">
+                    <img src="../images/eclair-chocolat-640.jpg" alt="eclair au chocolat">
+                    <figcaption>Pâtisserie</figcaption>
+                </figure>
+            </section>
+
+
+            <!-- DEBUT TABLEAU AFFICHAGE DE DONNEES -->
+            <section style="margin-top:100px;">
+                <div id="content">
+                    <h1 style="padding-top:100px;">Vos CVS</h1>
+                    <p class="texte-projet-cv">Vous pouvez manipuler vos CVS à votre guise. Vous avez la
+                        possibilité de les <u><b>modifier</b></u> ou les <u><b>supprimer</b></u></p>
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="text-center">Nom</th>
+                                <th scope="col" class="text-center">A propos</th>
+                                <th scope="col" class="text-center">Expériences</th>
+                                <th scope="col" class="text-center">Formations</th>
+                                <th scope="col" class="text-center">Compétences</th>
+                                <th scope="col" class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- FIN TABLEAU AFFICHAGE DE DONNEES -->
+
+
+            <!-- DEBUT FORMULAIRE AJOUT DE CV -->
+            <section class="container" style="margin-top: 40px;margin-bottom: 100px;">
+                <h3 id="notif-add" style="display: none;">Votre ajout a bien été pris en compte.</h3>
+                <h3 id="notif-update" style="display: none;">Votre modification a bien été pris en compte.</h3>
+                <h3 id="notif-delete" style="display: none;">Votre suppression a bien été pris en compte.</h3>
+                <h1 style="padding-top:100px;">Ajouter un CV</h1>
+                <p class="texte-projet-cv">Vous avez aussi la possibilité d'<u><b>ajouter</b></u> un nouveau CV.
+                </p>
+                <button class="btn btn-outline-primary" id="form-add">Ajouter un CV</button>
+                <form action="javascript:void(0);" id="form" class="mt-4">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="propos">A propos</label>
+                        <input type="text" name="propos" id="propos" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="experiences">Expériences</label>
+                        <input type="text" name="experiences" id="experiences" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="formations">Formations</label>
+                        <input type="text" name="formations" id="formations" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="competences">Compétences</label>
+                        <input type="text" name="competences" id="competences" class="form-control" required />
+                    </div>
+                    <input type="hidden" id="hidden" />
+                    <button type="button" class="btn btn-xs btn-primary" id="form-save">Enregistrer</button>
+                    <button type="button" class="btn btn-xs" id="form-cancel">Annuler</button>
+                </form>
+            </section>
+            <!-- FIN FORMULAIRE AJOUT DE CV -->
+
+        </div>
+    </main>
+
+    <!-- FIN CONTENU -->
+
+
+    <!-- DEBUT FOOTER-->
+
+    <footer class="text-center bg-dark p-3">
+
+        <div class="row justify-content-center pictogramme">
+            <!--linkedin-->
+            <div class="col col-md-1 text-right">
+                <a href="https://www.linkedin.com/in/eugénie-khayat-535085191">
+                    <div class="linkedin"><i class="fab fa-linkedin-in"></i></div>
+                </a>
+            </div>
+            <!--github-->
+            <div class="col col-md-1">
+                <a href="https://github.com/Eugenie94">
+                    <div class="github"><i class="fab fa-github"></i></div>
+                </a>
+            </div>
+            <!--mail-->
+            <div class="col col-md-1 text-left">
+                <a href="mailto:eugenie.khayat@gmail.com">
+                    <div class="mail"><i class="far fa-envelope"></i></div>
+                </a>
+            </div>
+
+    </footer>
+
+    <!-- FIN FOOTER -->
+
+    <script src="../js/script.js"></script>
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>

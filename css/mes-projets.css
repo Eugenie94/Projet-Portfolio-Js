@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+    padding: 20px;
+    margin: 100px auto 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+section h2{
+    color:#fb2ca2;
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 100%;
+}
+.bloc-projet-cv{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texte-projet-cv{
+    font-size:20px;
+    margin-top:40px;
+    text-align: center;
+}
+
+.table{
+    margin-top: 30px;
+}
+
+#form-add{
+    display: block;
+
+    margin:60px auto 100px auto;
+}
+
+#form{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}

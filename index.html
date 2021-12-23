@@ -39,12 +39,29 @@
 
             <div onclick="showHamburger()" id="menuToggle">
 
+                <input type="checkbox" />
+          
                 <span></span>
                 <span></span>
                 <span></span>
           
       
               </div>
+              
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cv-crud/mon-cv.html">
+                            Mon CV
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projets-crud/projets.html">
+                            Mes projets
+                        </a>
+                    </li>
+                </ul>
+            </div>
             
         </nav>
 
@@ -57,25 +74,24 @@
 
     <!-- DEBUT CONTENU -->
     <main>
+        <!-- DEBUT MENU HAMBURGER -->
+
         <div id="menu-content">
             <ul style="list-style-type: none;">
                 <li>
-                    <a class="link-hamburger" href="">
-                        A propos de moi
-                    </a>
-                </li>
-                <li>
-                    <a class="link-hamburger" href="">
+                    <a class="link-hamburger" href="./cv-crud/mon-cv.html">
                         Mon CV
                     </a>
                 </li>
                 <li>
-                    <a class="link-hamburger" href="">
+                    <a class="link-hamburger" href="./projets-crud/projets.html">
                         Mes projets
                     </a>
                 </li>
             </ul>
         </div>
+
+        <!-- FIN MENU HAMBURGER -->
 
         <div class="parent1-texte">
             <div class="parent-texte d-flex flex-column">
@@ -86,12 +102,13 @@
             </div>
         </div>
     </main>
+
     <!-- FIN CONTENU -->
 
 
     <!-- DEBUT FOOTER-->
 
-    <footer class="text-center bg-dark p-2">
+    <footer class="text-center bg-dark p-3">
 
         <div class="row justify-content-center pictogramme">
             <!--linkedin-->
@@ -117,9 +134,8 @@
 
     <!-- FIN FOOTER -->
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 
 
 </body>
-
 </html>

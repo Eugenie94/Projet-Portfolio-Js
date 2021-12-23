@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bdd" : "npx json-server --watch ./data/bdd.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eugenie94/Projet-Portfolio-Js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eugenie94/Projet-Portfolio-Js/issues"
+  },
+  "homepage": "https://github.com/Eugenie94/Projet-Portfolio-Js#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
