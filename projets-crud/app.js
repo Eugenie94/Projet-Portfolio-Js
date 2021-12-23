@@ -163,7 +163,7 @@ function fetchAllProjects(projects) {
 
     // Je créée la notification de modification de projet.
     function modification() {
-        alert('Votre modification a bien été prise en compte.', 1000);
+        alert('Votre modification a bien été prise en compte.');
     }
 
     // Je créée la notification de suppression de projet.
