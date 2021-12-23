@@ -3,8 +3,8 @@
 let hamburger = document.getElementById("menu-content");
 let contenu = document.getElementsByClassName("parent1-texte");
 
-function showHamburger(){
-    if (hamburger.style.display === "block"){
+function showHamburger() {
+    if (hamburger.style.display === "block") {
         hamburger.style.display = "none";
     } else {
         hamburger.style.display = "block";
@@ -25,6 +25,6 @@ function showHamburger(){
 //     }
 // }
 
-    
+
 
 /* FIN MENU HAMBURGER */

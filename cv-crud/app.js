@@ -1,6 +1,8 @@
 // J'importe les données
 
-import {cvs} from "./cv.js";
+import {
+    cvs
+} from "./cv.js";
 
 console.table(cvs);
 
@@ -29,55 +31,84 @@ function fetchAllCvs(cvs) {
     // add <td>${p.image}</td> apres
     cvs.forEach((c, index) => {
         data += `<tr>
-        <td>${c.name}</td>
-        <td>${c.propos}</td>
-        <td>${c.experiences}</td>
-        <td>${c.formations}</td>
-        <td>${c.competences}</td>
-        
-        <td>
-            <button class="edit btn btn-sm btn-outline-success" value="${index}">Modifier</button>
-            <button class="delete btn btn-sm btn-outline-danger" value="${index}">Supprimer</button>
-        </td>
-        </tr>`;
+<td>${c.name}</td>
+<td>${c.propos}</td>
+<td>${c.experiences}</td>
+<td>${c.formations}</td>
+<td>${c.competences}</td>
+
+<td>
+<button class="edit btn btn-sm btn-outline-success" value="${index}">Modifier</button>
+<button class="delete btn btn-sm btn-outline-danger" value="${index}">Supprimer</button>
+</td>
+</tr>`;
     });
 
     // J'affiche les éléments dans le HTML
     elApp.innerHTML += data;
 
 
-//____________________________________ DEBUT D'AJOUT D'UNE LIGNE ____________________________________ //
+    //____________________________________ DEBUT D'AJOUT D'UNE LIGNE ____________________________________ //
 
-// J'ajoute un eventListerner au clic sur le bouton d'enregistrement du formulaire.
+    // J'ajoute un eventListerner au clic sur le bouton d'enregistrement du formulaire.
 
-document.getElementById("form-save").addEventListener("click", function () {
-    // Récupération des champs
-    const name = document.getElementById("name").value;
-    const propos = document.getElementById("propos").value;
-    const experiences = document.getElementById("experiences").value;
-    const formations = document.getElementById("formations").value;
-    const competences = document.getElementById("competences").value;
-    // const image = document.getElementById("image").value;
+    document.getElementById("form-save").addEventListener("click", function () {
+        // Récupération des champs
+        const name = document.getElementById("name").value;
+        const propos = document.getElementById("propos").value;
+        const experiences = document.getElementById("experiences").value;
+        const formations = document.getElementById("formations").value;
+        const competences = document.getElementById("competences").value;
+        // const image = document.getElementById("image").value;
 
-    //  && image add apres
-    if (name && propos && experiences && formations && competences) {
-        // Nouvelle ligne
-        const cv = {
-            name: name,
-            propos: propos,
-            experiences: experiences,
-            formations: formations,
-            competences: competences,
-        };
+        //  && image add apres
+        if (name && propos && experiences && formations && competences) {
+            // Nouvelle ligne
+            const cv = {
+                name: name,
+                propos: propos,
+                experiences: experiences,
+                formations: formations,
+                competences: competences,
+            };
 
-        // J'ajoute la nouvelle ligne
-        cvs.push(cv);
+            // J'ajoute la nouvelle ligne
+            cvs.push(cv);
 
-        // Notification d'ajout
-        ajout();
+            // Notification d'ajout
+            ajout();
+
+            // Je créée une nouvelle fonction hideForm.
+
+            function hideForm() {
+                elForm.style.display = "none";
+                elContent.style.display = "block";
+
+                document.getElementById("name").value = "";
+                document.getElementById("propos").value = "";
+                document.getElementById("experiences").value = "";
+                document.getElementById("formations").value = "";
+                document.getElementById("competences").value = "";
+            }
+
+            // J'appelle ma fonction hideForm
+            hideForm();
+
+
+            // J'affiche le nouveau tableau
+            return fetchAllCvs(cvs);
+        }
+
+
+    });
+
+
+
+    // J'ajoute un eventListerner au clic sur le bouton annulation du formulaire
+
+    document.getElementById("form-cancel").addEventListener("click", function () {
 
         // Je créée une nouvelle fonction hideForm.
-
         function hideForm() {
             elForm.style.display = "none";
             elContent.style.display = "block";
@@ -89,53 +120,24 @@ document.getElementById("form-save").addEventListener("click", function () {
             document.getElementById("competences").value = "";
         }
 
-        // J'appelle ma fonction hideForm
         hideForm();
+    });
+
+    //__________________________________ FIN D'AJOUT D'UNE LIGNE ___________________________________ //
 
 
-        // J'affiche le nouveau tableau
-        return fetchAllCvs(cvs);
-    }
-
-
-});
-
-
-
-// J'ajoute un eventListerner au clic sur le bouton annulation du formulaire
-
-document.getElementById("form-cancel").addEventListener("click", function () {
-
-    // Je créée une nouvelle fonction hideForm.
-    function hideForm() {
-        elForm.style.display = "none";
-        elContent.style.display = "block";
-
-        document.getElementById("name").value = "";
-        document.getElementById("propos").value = "";
-        document.getElementById("experiences").value = "";
-        document.getElementById("formations").value = "";
-        document.getElementById("competences").value = "";
-    }
-
-    hideForm();
-});
-
-//__________________________________ FIN D'AJOUT D'UNE LIGNE ___________________________________ //
-
-
-//__________________________________ DEBUT MODIFICATION ET SUPPRESSION D'UNE LIGNE ____________________________ //
+    //__________________________________ DEBUT MODIFICATION ET SUPPRESSION D'UNE LIGNE ____________________________ //
 
     // Je créée chaque bouton "Editer"
     document.querySelectorAll("button.edit").forEach(b => {
-        b.addEventListener("click", function() {
+        b.addEventListener("click", function () {
             return editCv(this.value);
         });
     });
 
     // Je créée chaque bouton "Supprimer"
     document.querySelectorAll("button.delete").forEach(b => {
-        b.addEventListener("click", function() {
+        b.addEventListener("click", function () {
             return deleteCv(this.value);
         });
     });
@@ -146,9 +148,9 @@ document.getElementById("form-cancel").addEventListener("click", function () {
     function editCv(index) {
         // Je récupère la ligne via son index
         const cv = cvs.find((c, i) => {
-          return i == index;
+            return i == index;
         });
-      
+
         // J'alimente les champs
         document.getElementById("name").value = cv.name;
         document.getElementById("propos").value = cv.propos;
@@ -156,11 +158,11 @@ document.getElementById("form-cancel").addEventListener("click", function () {
         document.getElementById("formations").value = cv.formations;
         document.getElementById("competences").value = cv.competences;
         document.getElementById("hidden").value = index;
-      
+
         displayForm();
 
         cvs.push(cv);
-        
+
         // Notification de modification
         modification();
 
@@ -172,7 +174,7 @@ document.getElementById("form-cancel").addEventListener("click", function () {
         }
     }
 
-    
+
     // Je créée la notification de modification de projet.
     function ajout() {
         alert('Votre projet à bien été ajouté.');
@@ -200,9 +202,9 @@ document.getElementById("form-cancel").addEventListener("click", function () {
         // Notification de suppression
         suppression();
     }
-      
-//__________________________________ FIN MODIFICATION ET SUPPRESSION D'UNE LIGNE ____________________________ //
-   
+
+    //__________________________________ FIN MODIFICATION ET SUPPRESSION D'UNE LIGNE ____________________________ //
+
 }
 
 fetchAllCvs(cvs);

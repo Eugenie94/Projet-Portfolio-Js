@@ -51,7 +51,7 @@
 
 
 /* DEBUT MENU HAMBURGER */
-#menuToggle{
+#menuToggle {
     display: none;
     position: relative;
     margin-top: 5%;
@@ -120,13 +120,14 @@ li {
 
 
 /* DEBUT CONTENU */
-h1{
+h1 {
     font-family: roboto;
     font-size: 45px;
     color: #fb2ca2;
     font-weight: bold;
     text-align: center;
 }
+
 .nom-prenom {
     /* EUGENIE KHAYAT */
     font-family: roboto;
@@ -139,8 +140,8 @@ h1{
     margin: 0 auto;
     letter-spacing: .15em;
     animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
 .nom-prenom:hover {

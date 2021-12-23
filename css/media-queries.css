@@ -155,16 +155,16 @@
         display: block;
         font-size: 1.9vh;
     }
-    
+
 }
 
 @media screen and (max-width: 500px) {
-    
+
     .parent1-texte {
         top: 40vh;
     }
 
-    #menuToggle{
+    #menuToggle {
         display: block;
     }
 
@@ -172,12 +172,12 @@
 
 
 @media screen and (max-width: 991px) {
-    
+
     .parent1-texte {
         top: 30vh;
     }
 
-    #menuToggle{
+    #menuToggle {
         display: block;
     }
 
